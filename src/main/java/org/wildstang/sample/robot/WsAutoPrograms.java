@@ -1,17 +1,6 @@
 package org.wildstang.sample.robot;
 
 import org.wildstang.framework.core.AutoPrograms;
-import org.wildstang.sample.auto.program.FeedFullField;
-import org.wildstang.sample.auto.program.FullFieldLeft;
-import org.wildstang.sample.auto.program.FullFieldRight;
-import org.wildstang.sample.auto.program.HalfFieldLeft;
-import org.wildstang.sample.auto.program.HalfFieldRight;
-import org.wildstang.sample.auto.program.Trench;
-import org.wildstang.sample.auto.program.ShootMid;
-import org.wildstang.sample.auto.program.SpoilerLeft;
-import org.wildstang.sample.auto.program.SpoilerRight;
-
-
 /**
  * All active AutoPrograms are enumerated here.
  * It is used in Robot.java to initialize all programs.
@@ -19,16 +8,7 @@ import org.wildstang.sample.auto.program.SpoilerRight;
 public enum WsAutoPrograms implements AutoPrograms {
 
     // enumerate programs
-    //SAMPLE_PROGRAM("Sample", SampleAutoProgram.class),
-    FULL_FEED_LEFT("FullFieldLeft", FullFieldLeft.class),
-    FEED_FULL_FIELD("FeedFullField", FeedFullField.class),
-    FULL_FEED_RIGHT("FullFieldRight", FullFieldRight.class),
-    HALF_FIELD_RIGHT("HalfFieldRight", HalfFieldRight.class),
-    HALF_FIELD_LEFT("HalfFieldLeft", HalfFieldLeft.class),
-    TRENCH("Trench", Trench.class),
-    SHOOT_MID("ShootMid", ShootMid.class),
-    SPOILER_RIGHT("SpoilerRight", SpoilerRight.class),
-    SPOILER_LEFT("SpoilerLeft", SpoilerLeft.class)
+    //SAMPLE_PROGRAM("Sample", SampleAutoProgram.class)
     ;
 
     /**

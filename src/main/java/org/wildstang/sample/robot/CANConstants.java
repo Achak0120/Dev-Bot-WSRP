@@ -30,19 +30,6 @@ public final class CANConstants {
     public static final int DRIVE4 = 13; // BR
     public static final int ANGLE4 = 14;
 
-    // intake
-    public static final int INTAKE_DEPLOY = 22;
-    public static final int INTAKE_SPIN_RIGHT = 23;
-    public static final int INTAKE_SPIN_LEFT = 24;
-
-    // shooter
-    public static final int FEEDER = 25;
-    public static final int PREACCEL = 26;
-    public static final int LAUNCHER_LEFT = 27;
-    public static final int LAUNCHER_MIDDLE = 28;
-    public static final int LAUNCHER_RIGHT = 29;
-    public static final int HOOD = 30;
-
     // only needed for REV logging
     public static final Map<Integer, String> aliasMap = Map.ofEntries(
         Map.entry(DRIVE1, "DRIVE1"),
@@ -52,17 +39,6 @@ public final class CANConstants {
         Map.entry(DRIVE3, "DRIVE3"),
         Map.entry(ANGLE3, "ANGLE3"),
         Map.entry(DRIVE4, "DRIVE4"),
-        Map.entry(ANGLE4, "ANGLE4"),
-        
-        Map.entry(INTAKE_SPIN_LEFT, "INTAKE_SPIN_LEFT"),
-        Map.entry(INTAKE_SPIN_RIGHT, "INTAKE_SPIN_RIGHT"),
-
-        Map.entry(FEEDER, "FEEDER"),
-        Map.entry(PREACCEL, "PREACCEL"),
-        Map.entry(LAUNCHER_LEFT, "LAUNCHER_LEFT"),
-        Map.entry(LAUNCHER_MIDDLE, "LAUNCHER_MIDDLE"),
-        Map.entry(LAUNCHER_RIGHT, "LAUNCHER_RIGHT"),
-        Map.entry(HOOD, "HOOD")
-
+        Map.entry(ANGLE4, "ANGLE4")
     );
 }

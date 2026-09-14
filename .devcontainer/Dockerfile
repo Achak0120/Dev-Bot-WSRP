@@ -1,10 +1,10 @@
 FROM mcr.microsoft.com/devcontainers/java:1-17-bookworm
 
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor > /usr/share/keyrings/yarn-archive-keyring.gpg
-
 # install dependencies
-RUN apt update
-RUN apt install -y python3-pip git-lfs
+RUN apt-get purge --auto-remove yarn || true
+RUN rm /etc/apt/sources.list.d/yarn.list || true
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y python3-pip git-lfs
 RUN pip3 install --break-system-packages requests
 
 # download WPILib extension

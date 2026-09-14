@@ -8,8 +8,6 @@ import org.wildstang.framework.io.outputs.Output;
 import org.wildstang.hardware.roborio.outputs.config.WsMotorControllers;
 import org.wildstang.hardware.roborio.outputs.config.WsSparkConfig;
 import org.wildstang.hardware.roborio.outputs.config.WsTalonConfig;
-import org.wildstang.sample.subsystems.intake.IntakeConstants;
-import org.wildstang.sample.subsystems.launcher.LauncherConstants;
 import org.wildstang.sample.subsystems.swerve.ModuleConstants;
 
 /**
@@ -35,17 +33,7 @@ public enum WsOutputs implements Outputs {
     // Other Motors
     // ---------------------------------
 
-    INTAKE_DEPLOY("Intake Deploy Motor", new WsTalonConfig(CANConstants.INTAKE_DEPLOY, WsMotorControllers.TALON_FX)),
-    INTAKE_SPIN_LEFT("Left Intake Spin Motor", new WsSparkConfig(CANConstants.INTAKE_SPIN_LEFT, WsMotorControllers.SPARK_FLEX_BRUSHLESS, IntakeConstants.leftSpinConfig(), true)),
-    INTAKE_SPIN_RIGHT("Right Intake Spin Motor", new WsSparkConfig(CANConstants.INTAKE_SPIN_RIGHT, WsMotorControllers.SPARK_FLEX_BRUSHLESS, IntakeConstants.rightSpinConfig(), true)),
-
-    FEEDER("Feeder Motor", new WsSparkConfig(CANConstants.FEEDER, WsMotorControllers.SPARK_MAX_BRUSHLESS, LauncherConstants.feedConfig())),
-    PREACCEL("Pre-Accel Motor", new WsSparkConfig(CANConstants.PREACCEL, WsMotorControllers.SPARK_MAX_BRUSHLESS, LauncherConstants.preAccelConfig())),
-    LAUNCHER_MIDDLE("Launcher Middle Motor", new WsSparkConfig(CANConstants.LAUNCHER_MIDDLE, WsMotorControllers.SPARK_FLEX_BRUSHLESS, LauncherConstants.middleConfig(), true)),
-    LAUNCHER_LEFT("Launcher Left Motor", new WsSparkConfig(CANConstants.LAUNCHER_LEFT, WsMotorControllers.SPARK_FLEX_BRUSHLESS, LauncherConstants.leftConfig(), true)),
-    LAUNCHER_RIGHT("Launcher Right Motor", new WsSparkConfig(CANConstants.LAUNCHER_RIGHT, WsMotorControllers.SPARK_FLEX_BRUSHLESS, LauncherConstants.rightConfig(), true)),
-    HOOD("Hood Motor", new WsSparkConfig(CANConstants.HOOD, WsMotorControllers.SPARK_MAX_BRUSHLESS, LauncherConstants.hoodConfig(), true)),
-
+    
     ; // end of enum
 
     /**
